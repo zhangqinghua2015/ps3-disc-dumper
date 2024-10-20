@@ -126,7 +126,7 @@ jobs:
           omitNameDuringUpdate: true
           omitPrereleaseDuringUpdate: true
       - name: 'Create or update GitHub custom release draft'
-        # if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name == 'push' }}
         uses: ncipollo/release-action@v1
         with:
           draft: true
