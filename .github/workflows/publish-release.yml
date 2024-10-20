@@ -111,8 +111,8 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           commit: '${{ github.sha }}'
-          # tag: 'v${{ env.version_full }}'
-          tag: 'test'
+          tag: 'v${{ env.version_full }}'
+          # tag: 'test'
           draft: true
           prerelease: true
           allowUpdates: true
