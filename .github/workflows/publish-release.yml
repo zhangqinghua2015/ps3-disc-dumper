@@ -32,8 +32,10 @@ jobs:
             command_extra: '-t:BundleApp'
     runs-on: '${{ matrix.os }}'
     env:
-      version_full: '${{ github.ref_name }}'
-      version_short: '${{ github.ref_name }}'
+      # version_full: '${{ github.ref_name }}'
+      # version_short: '${{ github.ref_name }}'
+      version_full: '0.0.1'
+      version_short: '0.0.1'
       artifact_name: 'ps3-disc-dumper_vX.Y.Z.zip'
     permissions:
       contents: write
